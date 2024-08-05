@@ -61,3 +61,15 @@ There are some special triggers to control when our code could be executed.
 
 OnTick(): Occurs after a change on the price.
 OnTimer(): Occurs after a change in the time.
+OnStart(): Occurs when the script is started.
+OnStop(): Occurs when the script is stopped.
+
+
+## Variables
+
+MQL4 is a typed language. This means that we need to specify the type of the variable.
+
+Example for integer variable:
+```
+int myvar = 20;
+```
