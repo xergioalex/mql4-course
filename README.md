@@ -73,3 +73,87 @@ Example for integer variable:
 ```
 int myvar = 20;
 ```
+
+Datetime vars:
+```
+datetime date1 = D'2020.07.01';
+datetime date2 = D'2020.07.06 15:45';
+datetime date3 = D'06.07.2020 15:45';
+datetime date4 = D'2020.07.06 14:16:30';
+Print("Date1 is: ", date1);
+Print("Date2 is: ", date2);
+Print("Date3 is: ", date3);
+Print("Date4 is: ", date4);
+```
+
+## Docs
+
+Take a look at more information about mql4 types and variables:
+https://docs.mql4.com/basis/types
+
+Take a look at more information about mql4 functions:
+https://docs.mql4.com/basis/functions
+
+
+## Operators
+
+https://docs.mql4.com/basis/operators
+
+
+## Exercise 1
+
+Check if the number is even or odd.
+```
+int mynumber = 55;
+if (mynumber % 2 == 0) {
+  Print("Even number");
+} else {
+  Print("Odd number");
+}
+```
+
+## Exercise 2
+
+Get all the numbers that can be divided by 5 between 1 and 50.
+```
+int index = 1;
+while (index <= 50) {
+  if(contador % 5 == 0) {
+    Print("The number ", index, " can be divided by 5.");s
+  }
+  index++;
+}
+```
+
+## Exercise 3
+
+Raise numbers to the square
+for(int i = 1; i < 21; i++) {
+   Print("The number ", i, " raised to the square is: ", i*i);
+}
+
+## Exercise 4 (Switch Case)
+
+```
+int code = 10;
+switch(code) {
+   case 10:
+      Print("Botella de agua");
+      break;
+   case 20:
+      Print("Lata de refresco");
+      break;
+   case 30:
+      Print("Chocolate");
+      break;
+   case 40:
+      Print("Gominolas");
+      break;
+   case 50:
+      Print("Galletas");
+      break;
+   default:
+      Print("Este producto no está disponible");
+      break;
+}
+```
