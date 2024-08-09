@@ -157,3 +157,43 @@ switch(code) {
       break;
 }
 ```
+
+## Exercise 5 (Functions)
+
+```
+void OnStart() {
+ bool pajaro_1_cantando = true;
+ bool perro_esta_ladrando = Perro_Ladrando(Pajaro_2_Cantando(pajaro_1_cantando));
+ Print("¿El perro está ladrando? La respuesta es: ", perro_esta_ladrando);
+}
+
+bool Pajaro_2_Cantando(bool p1_cantando){
+   return(!p1_cantando);
+}
+
+bool Perro_Ladrando(bool p2_cantando){
+   return(!p2_cantando);
+}
+```
+
+
+## Arrays
+
+Arrays on MQL4 can contain up to 4 dimensions.
+
+```
+int array1[];  // Dynamic
+int array2[3];  // Static
+int array3[][3];  // 2D Array: 3 static columns, dynamic rows
+int array4[][3][4];  // 3D Array
+int array5[][3][4][5];  // 4D Array
+```
+
+Filling out arrays
+```
+int array1[5] = {1, 2, 3, 4, 5};  // Dynamic
+int array2[3] = {1, 2, 3};  // Static
+int array3[][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};  // 2D Array: 3 static columns, dynamic rows
+int array4[][3][4] = {{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}}};  // 3D Array
+int array5[][3][4][5] = {{{{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}}, {{16, 17, 18, 19, 20}, {21, 22, 23, 24, 25}, {26, 27, 28, 29, 30}}}};  // 4D Array
+```
