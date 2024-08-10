@@ -197,3 +197,44 @@ int array3[][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};  // 2D Array: 3 static colu
 int array4[][3][4] = {{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}}};  // 3D Array
 int array5[][3][4][5] = {{{{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}}, {{16, 17, 18, 19, 20}, {21, 22, 23, 24, 25}, {26, 27, 28, 29, 30}}}};  // 4D Array
 ```
+
+
+## Types of Programs
+
+Scripts:
+- Executed only one time: OnStart()
+- They are deleted after execution: OnStop()
+- Trading: Operations in the market can be executed
+- Can NOT create graphic elements.
+- Simultaneous execution: Only one script can be executed at the same time.
+- Can't execute other programs
+
+Experts:
+- Executed in the chart for indefinitely time after every Tick().
+- They are deleted after the chart is closed.
+- Trading: Operations in the market can be executed
+- Can create graphic elements.
+- Simultaneous execution: Only one expert can be executed at the same time.
+- Can execute other programs (Scripts or expert Advisors): iCustom()
+
+Indicators:
+- Executed in the chart for indefinitely time after every Tick().
+- They are deleted after the chart is closed.
+- Trading: Operations in the market can NOT be executed
+- Can NOT create graphic elements. 
+- Simultaneous execution: We can have multiple indicators in the chart.
+- Can't execute other programs
+
+
+Only Scripts and Experts advisors allow to execute trading operations.
+Only the Indicators can create graphic elements.
+The graphic elements can be created in the chart using buffers.
+The simultaneous execution of scripts and experts is not allowed.
+The simultaneous execution of indicators is allowed.
+Desde un expert Advisor es posible llamar a un script o indicador usando iCustom()
+Pero desde un script o indicador NO es posible llamar a otro script, indicador, o un expert advisor.
+
+
+
+
+
