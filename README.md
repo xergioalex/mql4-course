@@ -235,6 +235,14 @@ Desde un expert Advisor es posible llamar a un script o indicador usando iCustom
 Pero desde un script o indicador NO es posible llamar a otro script, indicador, o un expert advisor.
 
 
+## Trade Functions
+
+There are many trade orders that can be executed. More info about them here:
+https://docs.mql4.com/trading
+
+![Trade Functions](assets/trade-functions.png)
 
 
+## Creating our first Script
 
+### Script 1: Close all trade orders
