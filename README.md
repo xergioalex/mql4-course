@@ -341,8 +341,26 @@ void OnStart() {
 
 ```
 
-
 ## Indicators
+
+An important concept for creating an indicator it's the Buffer.
+
+Buffer: A buffer is an array of values of all calcs made by our indicator.
+These values are used to be able to draw something in the chart.
+
+
+![Buffer Chart Points](assets/buffer-chart-points.png)
+
+The indicators can works on the main chart or in a anidated window in the chart inside the main chart
+
+For example you can take a look at the MACD.
+
+For each indicator we should use a different buffers.
+
+
+### Let's create our first indicator
+
+The name of our indicator will be: "statistical volatility"
 
 We will create a simple indicator that will calc the volatility of the price.
 
@@ -364,7 +382,7 @@ Also we should configure the visualization parameters of the indicator.
 These parameters represents the buffers to store the data for the visualization in the chart.
 We can draw the indicator in a separated window or in the main chart.
 
-![Configure Indicator](assets/configure-indicator-visualization-parameters-buffers.png)
+![Configure Indicator](assets/configure-indicator-visualization-parameters.png)
 
 
 ### Customization
