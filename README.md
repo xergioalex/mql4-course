@@ -350,3 +350,25 @@ void OnStart() {
 
 ```
 
+
+## Creating an Indicator
+
+An important concept for creating an indicator it's the Buffer.
+
+Buffer: A buffer is an array of values of all calcs made by our indicator.
+These values are used to be able to draw something in the chart.
+
+
+![Buffer Chart Points](assets/buffer-chart-points.png)
+
+The indicators can works on the main chart or in a anidated window in the chart inside the main chart
+
+For example you can take a look at the MACD.
+
+For each indicator we should use a different buffers.
+
+
+### Let's create our first indicator
+
+The name of our indicator will be: "statistical volatility"
+
