@@ -284,11 +284,6 @@ https://docs.mql4.com/constants/errorswarnings/errorcodes
 ### Script: Close all trade orders
 
 ```
-//+------------------------------------------------------------------+
-//|                                               1.CloseTradeOrders |
-//|                                  Copyright 2024, MetaQuotes Ltd. |
-//|                                             https://www.mql5.com |
-//+------------------------------------------------------------------+
 #property copyright "Copyright 2024, MetaQuotes Ltd."
 #property link      "https://www.mql5.com"
 #property version   "1.00"
@@ -296,10 +291,6 @@ https://docs.mql4.com/constants/errorswarnings/errorcodes
 
 //-- Include
 #include <stdlib.mqh>
-
-//+------------------------------------------------------------------+
-//| Script program start function                                    |
-//+------------------------------------------------------------------+
 
 void OnStart() {
    // Check if there are any open orders
@@ -350,3 +341,35 @@ void OnStart() {
 
 ```
 
+
+## Indicators
+
+We will create a simple indicator that will calc the volatility of the price.
+
+In the wizzard to create indicators, we should choose the type of events that will trigger the indicator.
+
+![Configure Indicator](assets/configure-indicator.png)
+
+- Type of events:
+
+OnCalculate(): This is triggered after a new tick.
+OnTimer(): When the timer event is triggered. We can trigger this after every x times.
+OnChartEvent(): This is triggered after any interaction with the chart. For example, when we click on the chart, when we move the mouse over the chart, etc.
+
+
+Also we should configure the visualization parameters of the indicator.
+
+![Configure Indicator](assets/configure-indicator-visualization-parameters.png)
+
+These parameters represents the buffers to store the data for the visualization in the chart.
+We can draw the indicator in a separated window or in the main chart.
+
+![Configure Indicator](assets/configure-indicator-visualization-parameters-buffers.png)
+
+
+### Customization
+
+We can configure the icon of the script when this is added to the chart in the configuration window.
+We should create a new folder "Icons" in the root of the script and add the icon there.
+The files should be in .ico format.
+For metatrader it's recommended files with 64x64 pixels.
