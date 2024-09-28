@@ -494,3 +494,19 @@ Example: If we have a 1:100 leverage, and we want to buy 1 lot of EUR/USD, we ne
 For example in the EUR:
 0.01 lot = 1000 EUR
 1 lot = 100,000 EUR
+
+
+#### Manage Execution Thread
+
+IsTradeAllowed(): This function is used to check if the trade is allowed to be executed.
+
+```
+bool IsTradeAllowed() {
+   return true;
+}
+```
+
+If we have the same expert advisor in multiple charts on the same device, and all of them try to open an order at the same time, the expert advisor will not be able to open the order.
+
+For that reason we should manage the execution thread of the expert advisor.
+![Execution Thread](assets/execution-thread.jpg)
