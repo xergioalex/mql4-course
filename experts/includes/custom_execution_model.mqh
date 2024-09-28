@@ -1,10 +1,10 @@
 //+------------------------------------------------------------------+
-//|                                             Modelo_Ejecucion.mqh |
-//|                                                        Quantdemy |
-//|                                        https://www.quantdemy.com |
+//|                                             CustomModelExecution.mqh |
+//|                                                        XergioAleX |
+//|                                        https://www.xergioalex.com |
 //+------------------------------------------------------------------+
-#property copyright "Quantdemy"
-#property link      "https://www.quantdemy.com"
+#property copyright "XergioAleX"
+#property link      "https://www.xergioalex.com"
 #property strict
 //+------------------------------------------------------------------+
 //| defines                                                          |
