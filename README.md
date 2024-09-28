@@ -1,5 +1,5 @@
 # mql4-course
-MQL4 Course Notes
+MQL4 Course Notes: https://www.udemy.com/course/aprende-a-programar-en-mql4-desde-cero/
 
 ## MQL4 (MetaQuotes Language 4)
 ---
@@ -463,3 +463,15 @@ There are predefined methods on MQL4 to calc the standard deviation like **iStdD
 We can find the indicator code in the file: [**indicators/statisticalVolatility.mq4**](indicators/0.statisticalVolatility.mq4)
 
 ![Statistical Volatility Code](assets/statistical-volatility-code.png)
+
+
+
+
+# Creating an Expert Advisor
+
+Strategy for the expert advisor:
+
+![Strategy for the expert advisor](assets/strategy-for-the-expert-advisor.jpg)
+
+
+Take a look at the code for this expert advisor in the file: [**experts/ustomStrategy.mq4c**](experts/customStrategy.mq4)
