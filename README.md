@@ -475,3 +475,9 @@ Strategy for the expert advisor:
 
 
 Take a look at the code for this expert advisor in the file: [**experts/ustomStrategy.mq4c**](experts/customStrategy.mq4)
+
+#### What is the Leverage (Apalancamiento)
+
+Leverage in trading refers to the use of borrowed funds to increase the potential return on an investment. It allows traders to control a larger position in the market with a relatively small amount of their own capital. Essentially, leverage amplifies both gains and losses.
+For example, if a trader uses 10:1 leverage, they can control a $10,000 position with just $1,000 of their own money. If the market moves in their favor, the returns are magnified. However, if the market moves against them, the losses are also magnified, and they could lose more than their initial investment.
+Leverage is commonly used in forex trading, futures, and other financial markets, but it comes with significant risk and requires careful risk management.
