@@ -228,7 +228,7 @@ void Abrir_Operacion(int tipo_operacion, double vol)
            }
 
          //Mandamos la orden
-         ticket = OrderSend(NULL, OP_BUY, lotes, Ask, max_slippage, precio_stop, precio_tp, "RSI_Quantdemy", magicnumber, 0, clrNONE);        //Enviamos orden de compra
+         ticket = OrderSend(NULL, OP_BUY, lotes, Ask, max_slippage, precio_stop, precio_tp, "RSI_XergioAleX", magicnumber, 0, clrNONE);        //Enviamos orden de compra
 
          if(ticket < 0)                                  //Si ticket es inferior a 0, significa que hemos tenido un error
            {
@@ -249,7 +249,7 @@ void Abrir_Operacion(int tipo_operacion, double vol)
            }
 
          //Mandamos la orden
-         ticket = OrderSend(NULL, OP_SELL, lotes, Bid, max_slippage, precio_stop, precio_tp, "RSI_Quantdemy", magicnumber, 0, clrNONE);        //Enviamos orden de compra
+         ticket = OrderSend(NULL, OP_SELL, lotes, Bid, max_slippage, precio_stop, precio_tp, "RSI_XergioAleX", magicnumber, 0, clrNONE);        //Enviamos orden de compra
 
          if(ticket < 0)                                  //Si ticket es inferior a 0, significa que hemos tenido un error
            {

@@ -510,3 +510,9 @@ If we have the same expert advisor in multiple charts on the same device, and al
 
 For that reason we should manage the execution thread of the expert advisor.
 ![Execution Thread](assets/execution-thread.jpg)
+
+
+### What is the slippage
+
+Slippage in trading refers to the difference between the expected price of a trade and the actual price at which it is executed. This can occur due to various reasons, such as high market volatility or lack of liquidity.
+For example, if a trader places a buy order expecting it to be executed at $100, but due to rapid market movement, the order is executed at $101, the slippage is $1. Slippage can be positive (better price) or negative (worse price), and it is an important factor to consider in trading strategies, especially in fast-moving or highly volatile markets.
