@@ -385,9 +385,78 @@ We can draw the indicator in a separated window or in the main chart.
 ![Configure Indicator](assets/configure-indicator-visualization-parameters.png)
 
 
-### Customization
+### Customization (Icons)
 
 We can configure the icon of the script when this is added to the chart in the configuration window.
-We should create a new folder "Icons" in the root of the script and add the icon there.
+We should create a new folder "Icons" in the root of the MQL4 folder and add the icon there.
 The files should be in .ico format.
 For metatrader it's recommended files with 64x64 pixels.
+
+
+### Indicator methods
+
+#### onInit()
+
+This is triggered when the indicator is added to the chart, this is executed only the first time.
+At the end of the execution we should return a value.
+
+![onInit() return values](assets/on-init-return-values.png)
+
+```
+int OnInit()
+  {
+//--- indicator buffers mapping
+   SetIndexBuffer(0,buffer_volBuffer);
+   SetIndexBuffer(1,buffer_mediaBuffer);
+   
+//---
+   return(INIT_SUCCEEDED);
+  }
+```
+
+
+#### onCalculate()
+
+This will triggered after any new tick change on the price.
+
+```
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime &time[],
+                const double &open[],
+                const double &high[],
+                const double &low[],
+                const double &close[],
+                const long &tick_volume[],
+                const long &volume[],
+                const int &spread[])
+  {
+//---
+   
+//--- return value of prev_calculated for next call
+   return(rates_total);
+  }
+```
+
+### Project: Develop an indicator to calculate the statistical volatility of the price
+
+Statistical Price Volatility refers to the degree of variation in the price of a financial instrument over a specific period of time. It is a measure of the dispersion of returns and is often calculated using statistical methods such as standard deviation or variance. High volatility indicates a high degree of price variation, while low volatility indicates a more stable price movement.
+
+![Statistical Volatility](assets/statistical-volatility.jpg)
+
+Statistical volatility is defined as the standard deviation of the logarithm of returns.
+
+![Statistical Volatility Definition](assets/statistical-volatility-definition.jpg)
+
+The standard deviation is defined as the average size of the deviations from its mean. The further the price deviates from its mean, the greater the volatility.
+
+Finally, statistical volatility is defined as the standard deviation of the natural logarithm of returns.
+
+The following is the formula to calc the volatility:
+
+![Statistical Volatility Formula](assets/statistical-volatility-formula.jpg)
+
+![Statistical Volatility Formula MQL4](assets/statistical-volatility-formula-mql4.jpg)
+
+There are predefined methods on MQL4 to calc the standard deviation like **iStdDev()**.
+
