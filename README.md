@@ -460,3 +460,6 @@ The following is the formula to calc the volatility:
 
 There are predefined methods on MQL4 to calc the standard deviation like **iStdDev()**.
 
+We can find the indicator code in the file: [**indicators/statisticalVolatility.mq4**](indicators/0.statisticalVolatility.mq4)
+
+![Statistical Volatility Code](assets/statistical-volatility-code.png)
